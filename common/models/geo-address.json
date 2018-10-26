@@ -1,0 +1,57 @@
+{
+  "name": "GeoAddress",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "location": {
+      "type": "object"
+    },
+    "formatted_address": {
+      "type": "string"
+    },
+    "location_type": {
+      "type": "string"
+    },
+    "types": {
+      "type": [
+        "string"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {
+    "reverseGeocode": {
+      "accepts": [
+        {
+          "arg": "latlang",
+          "type": "geopoint",
+          "required": true,
+          "description": "latitude and longitude",
+          "http": {
+            "source": "query"
+          }
+        }
+      ],
+      "returns": [
+        {
+          "arg": "response_data",
+          "type": "object",
+          "root": true,
+          "description": "result"
+        }
+      ],
+      "description": "service lookup the local data set if not then get data from google",
+      "http": [
+        {
+          "path": "/:latlang/reverseGeocode",
+          "verb": "get"
+        }
+      ]
+    }
+  }
+}
