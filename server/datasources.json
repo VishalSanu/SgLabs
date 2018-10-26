@@ -4,7 +4,7 @@
     "port": 27017,
     "url": "mongodb+srv://sgDbuser:<atalasKey>@sglabs-cluster0-seaew.mongodb.net/sgDB?retryWrites=true",
     "database": "sgDB",
-    "password": "O8GaKe4BNGHyMMC8",
+    "password": "<atalasKey>",
     "name": "db",
     "user": "sgDbuser",
     "connector": "mongodb"
@@ -17,7 +17,7 @@
       "headers": {
         "accept": "application/json",
         "content-type": "application/json",
-        "key": "AIzaSyBwf5g-yaO0LczUrTukYgr7eWnlSYyfJq0"
+        "key": "<googleKey>"
       },
       "strictSSL": false
     },
@@ -50,7 +50,7 @@
     "port": 27017,
     "url": "mongodb://sgDbuser:<mongoDBAtlasKey>@sglabs-cluster0-shard-00-00-seaew.mongodb.net:27017,sglabs-cluster0-shard-00-01-seaew.mongodb.net:27017,sglabs-cluster0-shard-00-02-seaew.mongodb.net:27017/sgDB?ssl=true&replicaSet=SGLabs-Cluster0-shard-0&authSource=admin&retryWrites=true",
     "database": "sgDB",
-    "password": "O8GaKe4BNGHyMMC8",
+    "password": "<atlasKey>",
     "name": "monogdb2",
     "user": "sgDbuser",
     "connector": "mongodb"
