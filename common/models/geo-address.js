@@ -13,7 +13,7 @@ Geoaddress.afterRemote('reverseGeocode', function( context,unused, next) {
     	console.log('length 0');
 //    	next();
 	var google = Geoaddress.app.dataSources.google;
-	 google.geocode(context.args.latlang.lat,context.args.latlang.lng,'AIzaSyBwf5g-yaO0LczUrTukYgr7eWnlSYyfJq0', /* @callback */ function(err,response,ctx){
+	 google.geocode(context.args.latlang.lat,context.args.latlang.lng,'<GoogleKey>', /* @callback */ function(err,response,ctx){
     	if (err) throw err; //error making request
     	
     	    if (response.error) {
