@@ -2,7 +2,7 @@
   "db": {
     "host": "sglabs-cluster0-shard-00-00-seaew.mongodb.net",
     "port": 27017,
-    "url": "mongodb+srv://sgDbuser:O8GaKe4BNGHyMMC8@sglabs-cluster0-seaew.mongodb.net/sgDB?retryWrites=true",
+    "url": "mongodb+srv://sgDbuser:<atalasKey>@sglabs-cluster0-seaew.mongodb.net/sgDB?retryWrites=true",
     "database": "sgDB",
     "password": "O8GaKe4BNGHyMMC8",
     "name": "db",
@@ -48,7 +48,7 @@
   "monogdb2": {
     "host": "sglabs-cluster0-shard-00-00-seaew.mongodb.net",
     "port": 27017,
-    "url": "mongodb://sgDbuser:O8GaKe4BNGHyMMC8@sglabs-cluster0-shard-00-00-seaew.mongodb.net:27017,sglabs-cluster0-shard-00-01-seaew.mongodb.net:27017,sglabs-cluster0-shard-00-02-seaew.mongodb.net:27017/sgDB?ssl=true&replicaSet=SGLabs-Cluster0-shard-0&authSource=admin&retryWrites=true",
+    "url": "mongodb://sgDbuser:<mongoDBAtlasKey>@sglabs-cluster0-shard-00-00-seaew.mongodb.net:27017,sglabs-cluster0-shard-00-01-seaew.mongodb.net:27017,sglabs-cluster0-shard-00-02-seaew.mongodb.net:27017/sgDB?ssl=true&replicaSet=SGLabs-Cluster0-shard-0&authSource=admin&retryWrites=true",
     "database": "sgDB",
     "password": "O8GaKe4BNGHyMMC8",
     "name": "monogdb2",
